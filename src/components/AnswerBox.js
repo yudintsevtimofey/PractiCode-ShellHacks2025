@@ -1,17 +1,12 @@
 import "../styles/QuestionBox.css";
 import MultipleChoice from "./MultipleChoice";
 
-function AnswerBox(props) {
+function AnswerBox() {
   return (
     <div className="Box-Container">
       <header className="Box-header">
         <p className="Answer-text">Answer</p>
-        <MultipleChoice
-          ChoiceA={props.ChoiceA}
-          ChoiceB={props.ChoiceB}
-          ChoiceC={props.ChoiceC}
-          ChoiceD={props.ChoiceD}
-        ></MultipleChoice>
+        <MultipleChoice></MultipleChoice>
       </header>
     </div>
   );
