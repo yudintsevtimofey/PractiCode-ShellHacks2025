@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <QuestionBox></QuestionBox>
+        <QuestionBox Prompt="This is an ai generated prompt, is this true or false?"></QuestionBox>
       </header>
     </div>
   );
