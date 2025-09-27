@@ -1,11 +1,11 @@
 import "./App.css";
+import LifeBar from "./components/LifeBar";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div>Type racer</div>
-        <div>WPM</div>
+        <LifeBar></LifeBar>
       </header>
     </div>
   );
