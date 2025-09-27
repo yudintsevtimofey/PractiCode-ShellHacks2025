@@ -3,6 +3,7 @@
   border-width: 5px;
   border-style: dashed;
   border-color: black;
+  width: 50%;
 }
 .Box-header > p {
   color: black;
