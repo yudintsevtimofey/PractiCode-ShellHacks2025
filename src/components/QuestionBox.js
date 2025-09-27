@@ -1,15 +1,11 @@
 import "../styles/QuestionBox.css";
 
-function QuestionBox() {
+function QuestionBox(props) {
   return (
     <div className="Box-Container">
       <header className="Box-header">
         <p className="Question-text">Question</p>
-        <p className="Question-prompt">
-          tic tac toetic tac toetic tac toetic tac toetic tac toetic tac toetic
-          tac toetic tac toetic tac toetic tac toetic tac toetic tac toetic tac
-          toe?
-        </p>
+        <p className="Question-prompt">{props.Prompt}</p>
       </header>
     </div>
   );
