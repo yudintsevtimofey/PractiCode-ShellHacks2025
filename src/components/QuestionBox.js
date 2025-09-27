@@ -8,7 +8,7 @@ function QuestionBox() {
         <p className="Question-prompt">
           tic tac toetic tac toetic tac toetic tac toetic tac toetic tac toetic
           tac toetic tac toetic tac toetic tac toetic tac toetic tac toetic tac
-          toe
+          toe?
         </p>
       </header>
     </div>
