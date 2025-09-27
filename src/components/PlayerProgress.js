@@ -1,5 +1,5 @@
-import "./App.css";
-import LifeBar from "./components/LifeBar";
+import "../styles/PlayerProgress.css";
+import LifeBar from "./LifeBar";
 
 function PlayerProgress() {
   return (
