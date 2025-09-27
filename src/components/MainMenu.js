@@ -1,6 +1,18 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 
-const MainMenu = ({ onPlay }) => {
+
+
+
+function MainMenu () {
+
+    const navigate = useNavigate();
+
+     const handlePlayClick = () => {
+         navigate("/Lobbies");
+     };
+
+    
     return (
         <div style={{
             minHeight: '100vh',
@@ -14,7 +26,7 @@ const MainMenu = ({ onPlay }) => {
                 Code Race
             </h1>
             <button
-                onClick={onPlay}
+                onClick={(handlePlayClick)}
                 style={{
                     padding: '1rem 2.5rem',
                     fontSize: '1.25rem',

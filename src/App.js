@@ -1,13 +1,18 @@
 import "./App.css";
 import Lobbies from "./components/Lobbies";
+import PlayerProgress from "./components/PlayerProgress";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Lobbies></Lobbies>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainMenu />} />
+        <Route path="/Lobbies" element={<Lobbies />} />
+        <Route path="/PlayerProgress" element={<PlayerProgress />} />
+      </Routes>
+    </Router>
+
   );
 }
 
