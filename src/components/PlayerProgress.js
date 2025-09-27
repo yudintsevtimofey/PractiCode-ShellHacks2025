@@ -6,7 +6,7 @@ function PlayerProgress() {
     <div className="App">
       <header className="App-header">
         <LifeBar stops={1}></LifeBar>
-        <LifeBar stops={1}></LifeBar>
+        <LifeBar stops={5}></LifeBar>
       </header>
     </div>
   );
