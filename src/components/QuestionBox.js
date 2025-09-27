@@ -4,7 +4,12 @@ function QuestionBox() {
   return (
     <div className="Box-Container">
       <header className="Box-header">
-        <p>text on screen</p>
+        <p className="Question-text">Question</p>
+        <p className="Question-prompt">
+          tic tac toetic tac toetic tac toetic tac toetic tac toetic tac toetic
+          tac toetic tac toetic tac toetic tac toetic tac toetic tac toetic tac
+          toe
+        </p>
       </header>
     </div>
   );
