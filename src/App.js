@@ -1,11 +1,11 @@
 import "./App.css";
-import BackDrop from "./components/Backdrop.js";
+import LifeBar from "./components/LifeBar";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <BackDrop></BackDrop>
+        <LifeBar stops={1}></LifeBar>
       </header>
     </div>
   );
