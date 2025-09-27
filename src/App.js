@@ -7,6 +7,7 @@ function App() {
       <header className="App-header">
         <div>Type racer</div>
         <BackDrop></BackDrop>
+        <div>WPM</div>
       </header>
     </div>
   );
