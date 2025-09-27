@@ -1,11 +1,11 @@
 import "./App.css";
-import LifeBar from "./components/LifeBar";
+import PlayerProgress from "./components/PlayerProgress";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <LifeBar stops={1}></LifeBar>
+        <PlayerProgress></PlayerProgress>
       </header>
     </div>
   );
