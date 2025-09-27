@@ -1,7 +1,7 @@
 import "../styles/LifeBar.css";
-function LifeBar() {
-  const stops = 1;
-  switch (stops) {
+function LifeBar(props) {
+  //stops = 1;
+  switch (props.stops) {
     case 0:
       return (
         <div className="container">
