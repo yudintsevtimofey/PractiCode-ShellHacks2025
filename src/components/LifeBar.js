@@ -10,6 +10,8 @@ function LifeBar() {
       <div className="tenPercentClear">6</div>
       <div className="tenPercentClear">7</div>
       <div className="tenPercentClear">8</div>
+      <div className="tenPercentClear">9</div>
+      <div className="tenPercentClear">10</div>
     </div>
   );
 }
