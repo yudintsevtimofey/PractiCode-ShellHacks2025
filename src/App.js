@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <LifeBar></LifeBar>
+        <LifeBar stops={1}></LifeBar>
       </header>
     </div>
   );
