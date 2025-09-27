@@ -1,4 +1,4 @@
-import "./";
+import "./BackDrop.css";
 
 function BackDrop() {
   return <div></div>;
