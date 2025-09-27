@@ -1,0 +1,10 @@
+.Box-Container {
+  border-radius: 5px;
+  border-width: 5px;
+  border-style: dashed;
+  border-color: black;
+  width: 40%;
+}
+.Box-header > p {
+  color: black;
+}
