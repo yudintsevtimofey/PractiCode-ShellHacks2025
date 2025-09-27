@@ -1,6 +1,7 @@
 .Box-Container {
   border-radius: 5px;
   border-width: 5px;
+  border-style: dashed;
   border-color: black;
 }
 .Box-header > p {
