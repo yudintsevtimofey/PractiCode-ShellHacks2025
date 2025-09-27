@@ -1,4 +1,7 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
+
 
 const lobbies = [
     "Lobby 1",
@@ -9,7 +12,12 @@ const lobbies = [
     "Lobby 6",
 ];
 
-const Lobbies = () => {
+function Lobbies() {
+    const navigate = useNavigate();
+
+    const handleJoinClick = () => {
+        navigate("/PlayerProgress");
+    };
     return (
         <div
             style={{
@@ -63,7 +71,7 @@ const Lobbies = () => {
                                 cursor: "pointer",
                                 transition: "background 0.2s",
                             }}
-                            onClick={() => alert(`Joining ${name}`)}
+                            onClick={(handleJoinClick)}
                         >
                             Join
                         </button>
