@@ -1,22 +1,14 @@
-<<<<<<< HEAD
-import React from "react";
-import ProblemGenerator from "./ProblemGenerator";
-=======
 import "./App.css";
 import LifeBar from "./components/LifeBar";
->>>>>>> origin/main
+import MainMenu from "./components/MainMenu";
+import Lobbies from "./components/Lobbies";
 
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
-      <h1>Code Practice</h1>
-      <ProblemGenerator />
-=======
       <header className="App-header">
-        <LifeBar stops={1}></LifeBar>
+        <Lobbies stops={1}></Lobbies>
       </header>
->>>>>>> origin/main
     </div>
   );
 }
