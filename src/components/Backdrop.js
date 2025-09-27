@@ -3,7 +3,7 @@ import "./BackdropStyle.css";
 function BackDrop() {
   return (
     <div className="OuterShell">
-      <div>text</div>
+      <textarea></textarea>
     </div>
   );
 }
