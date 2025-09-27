@@ -9,7 +9,7 @@ function MultipleChoice() {
       <label for="C">C</label>
       <input type="radio" id="D" name="fav_language" value="D"></input>
       <label for="D">D</label>
-      <button></button>
+      <button>Submit</button>
     </div>
   );
 }
