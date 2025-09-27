@@ -1,7 +1,11 @@
 import "./BackdropStyle.css";
 
 function BackDrop() {
-  return <div>green</div>;
+  return (
+    <div className="OuterShell">
+      <div>text</div>
+    </div>
+  );
 }
 
 export default BackDrop;
