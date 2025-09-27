@@ -1,5 +1,4 @@
 import "./App.css";
-import LifeBar from "./components/LifeBar";
 import PlayerProgress from "./components/PlayerProgress";
 
 function App() {
