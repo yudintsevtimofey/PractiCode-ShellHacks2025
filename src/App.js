@@ -1,4 +1,5 @@
 import "./App.css";
+import MainMenu from "./components/MainMenu";
 import Lobbies from "./components/Lobbies";
 import PlayerProgress from "./components/PlayerProgress";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
