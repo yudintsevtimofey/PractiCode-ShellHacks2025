@@ -12,6 +12,10 @@ function App() {
         <Route path="/" element={<MainMenu />} />
         <Route path="/Lobbies" element={<Lobbies />} />
         <Route path="/PlayerProgress" element={<PlayerProgress />} />
+
+        
+        
+        
       </Routes>
     </Router>
   );

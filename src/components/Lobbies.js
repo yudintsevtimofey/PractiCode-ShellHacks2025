@@ -12,11 +12,29 @@ const lobbies = [
     "Lobby 6",
 ];
 
+var Player1 = false
+var Player2 = false
+
 function Lobbies() {
     const navigate = useNavigate();
 
     const handleJoinClick = () => {
-        navigate("/PlayerProgress");
+        if (!Player1) {
+            Player1 = true;
+            document.cookie = "player=1";
+            navigate("/PlayerProgress");
+        }
+        else if (!Player2) {
+            Player2 = true;
+            document.cookie = "player=2";
+            navigate("/PlayerProgress");
+        }
+        else {
+            alert("Both player slots are full!");
+        }
+        
+
+        
     };
     return (
         <div
@@ -40,7 +58,7 @@ function Lobbies() {
                     maxWidth: "900px",
                 }}
             >
-                {lobbies.map((name, idx) => (
+                {lobbies.map((name) => (
                     <div
                         key={name}
                         style={{
@@ -71,7 +89,7 @@ function Lobbies() {
                                 cursor: "pointer",
                                 transition: "background 0.2s",
                             }}
-                            onClick={(handleJoinClick)}
+                            onClick={handleJoinClick}
                         >
                             Join
                         </button>
