@@ -9,8 +9,13 @@ from google.adk.runners import Runner
 from google.genai import types
 from google.adk.tools import google_search
 
+from fastapi.responses import HTMLResponse
+from fastapi.middleware.cors import CORSMiddleware
+
+
+
 # --- Setup ---
-os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY", "YOUR_KEY")
+os.environ["GOOGLE_API_KEY"] = "AIzaSyCLnW9hSvWqmYj4i659G3MJhGUZkn-gYKM"
 os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "False"
 
 MODEL_GEMINI_2_0_FLASH = "gemini-2.0-flash"
@@ -34,6 +39,24 @@ APP_NAME = "Code Practice"
 USER_ID = "user1234"
 SESSION_ID = "1234"
 
+# --- FastAPI App ---
+app = FastAPI()
+
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  # or ["*"] for all origins
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/")
+def home():
+    return HTMLResponse("<h1>Hello! Your backend is running</h1>")
+
+
 async def setup_session_and_runner():
     session_service = InMemorySessionService()
     session = await session_service.create_session(
@@ -43,11 +66,13 @@ async def setup_session_and_runner():
     return session, runner
 
 
-# --- FastAPI App ---
-app = FastAPI()
+
 
 class ProblemRequest(BaseModel):
     difficulty: str
+
+
+
 
 
 @app.post("/generate-problem")
