@@ -12,27 +12,15 @@ const lobbies = [
     "Lobby 6",
 ];
 
-var Player1 = false
-var Player2 = false
+
 
 function Lobbies() {
     const navigate = useNavigate();
 
-    const handleJoinClick = () => {
-        if (!Player1) {
-            Player1 = true;
-            document.cookie = "player=1";
-            navigate("/PlayerProgress");
-        }
-        else if (!Player2) {
-            Player2 = true;
-            document.cookie = "player=2";
-            navigate("/PlayerProgress");
-        }
-        else {
-            alert("Both player slots are full!");
-        }
-        
+    const handleJoinClick = async() => {
+    
+        navigate("/MainLobby");    
+
 
         
     };

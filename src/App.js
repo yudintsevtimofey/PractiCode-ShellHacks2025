@@ -1,7 +1,7 @@
 import "./App.css";
 import MainMenu from "./components/MainMenu";
 import Lobbies from "./components/Lobbies";
-import PlayerProgress from "./components/PlayerProgress";
+import MainLobby from "./components/MainLobby";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainMenu />} />
         <Route path="/Lobbies" element={<Lobbies />} />
-        <Route path="/PlayerProgress" element={<PlayerProgress />} />
+        <Route path="/MainLobby" element={<MainLobby />} />
 
         
         

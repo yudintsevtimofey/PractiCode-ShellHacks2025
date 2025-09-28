@@ -1,14 +1,16 @@
-import "../styles/QuestionBox.css";
+const QuestionBox = ({ prompt, loading, difficulty, onChangeDifficulty }) => (
+  <div style={{ padding: 20 }}>
+    <h3>Question</h3>
+    <p>{loading ? "Loading..." : prompt}</p>
 
-function QuestionBox(props) {
-  return (
-    <div className="Box-Container">
-      <header className="Box-header">
-        <p className="Question-text">Question</p>
-        <p className="Question-prompt">{props.Prompt}</p>
-      </header>
-    </div>
-  );
-}
-
+    <label>
+      Difficulty:&nbsp;
+      <select value={difficulty} onChange={(e) => onChangeDifficulty(e.target.value)}>
+        <option>Beginner Multiple Choice</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+    </label>
+  </div>
+);
 export default QuestionBox;
