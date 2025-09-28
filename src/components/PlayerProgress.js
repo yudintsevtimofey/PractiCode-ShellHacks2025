@@ -1,19 +1,17 @@
-import "../styles/PlayerProgress.css";
-import LifeBar from "./LifeBar";
+import LifeBar from "./LifeBar"
+import "../styles/PlayerProgress.css"
 
-function PlayerProgress({ p1 = 0, p2 = 0, maxBars = 5 }) {
-  console.log("PlayerProgress render", { p1, p2, maxBars });
+export default function PlayerProgress({ p1Score, p2Score, maxBars }) {
   return (
     <header className="App-header">
       <div className="container">
         <p>Player 1</p>
-        <LifeBar stops={p1} max={maxBars} />
+        <LifeBar stops = {p1Score}></LifeBar>
       </div>
       <div className="container">
         <p>Player 2</p>
-        <LifeBar stops={p2} max={maxBars} />
+        <LifeBar stops = {p2Score}></LifeBar>
       </div>
     </header>
   );
 }
-export default PlayerProgress;
