@@ -17,7 +17,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 
 # --- Setup ---
-os.environ["GOOGLE_API_KEY"] = "AIzaSyD2kogxnvSeNxpPiJeauV9fg4BD9ULD3VA"
+os.environ["GOOGLE_API_KEY"] = "Your_Google_API_Key"
 os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "False"
 
 MODEL_GEMINI_2_0_FLASH = "gemini-2.0-flash"
