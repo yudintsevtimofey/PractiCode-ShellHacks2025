@@ -21,7 +21,7 @@ export default function MainLobby() {
   const fetchNextProblem = useCallback(async () => {
     setLoading(true);
     try {
-      const res = await fetch("http://127.0.0.1:8000/generate-problem", {
+      const res = await fetch("http://localhost:8000/generate-problem", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -44,7 +44,7 @@ export default function MainLobby() {
     const key = player === "2" ? "p2" : "p1";     // default to p1
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/grade-problem", {
+      const res = await fetch("http://localhost:8000/grade-problem", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",

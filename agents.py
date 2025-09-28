@@ -17,7 +17,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 
 # --- Setup ---
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCLnW9hSvWqmYj4i659G3MJhGUZkn-gYKM"
+os.environ["GOOGLE_API_KEY"] = "AIzaSyD2kogxnvSeNxpPiJeauV9fg4BD9ULD3VA"
 os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "False"
 
 MODEL_GEMINI_2_0_FLASH = "gemini-2.0-flash"
@@ -66,7 +66,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # or ["*"] for all origins
+    allow_origins=["*"],  # frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
